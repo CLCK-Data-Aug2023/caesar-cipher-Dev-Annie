@@ -1,1 +1,12 @@
+#Shifting alphabet input by 5 characters to get encrypted message
+#import sys
+#print("Welcome to the Ceasar Cipher!")
+
+phrase = input('Please enter a sentence\n')
+
+encryption = phrase.maketrans("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", "fghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcde")
+output = phrase.translate(encryption)
+print("The encrypted sentence is:",output)
+
+#sys.exit("Congratulations on making a secret message. Goodbye")# add your code here
 # add your code here
